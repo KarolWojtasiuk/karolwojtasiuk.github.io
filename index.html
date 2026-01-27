@@ -1,29 +1,293 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="/favicon.svg" />
+        <link rel="stylesheet" href="/styles/app.css" />
+        <title>Home | Karol Wojtasiuk</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Karol Wojtasiuk</title>
-</head>
+    <body>
+        <header>
+            <h1>Karol Wojtasiuk</h1>
+            <p>Professional .NET Developer</p>
 
-<style>
-    html,
-    body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-</style>
+            <section id="contact">
+                <a href="mailto:work@karolwojtasiuk.com">
+                    <button>
+                        <img src="icons/envelope.svg" class="icon" />
+                        <span>Contact</span>
+                    </button>
+                </a>
 
-<body>
-    <div>
-        <h1>Karol Wojtasiuk</h1>
-        <h2>Work In Progress...</h2>
-        <h3><a href="https://github.com/KarolWojtasiuk">Go to GitHub</a></h3>
-    </div>
-</body>
+                <a
+                    href="https://www.linkedin.com/in/karolwojtasiuk/"
+                    target="_blank"
+                >
+                    <button>
+                        <img src="icons/linkedin.svg" class="icon" />
+                        <span>LinkedIn</span>
+                    </button>
+                </a>
+            </section>
+        </header>
 
+        <section class="container">
+            <h1>About me</h1>
+            <p>
+                I am a professional .NET Developer working in the financial
+                industry, I design and maintain a large no-code platform and
+                various integrations with external services, which are often
+                financial, enterprise or government solutions.
+            </p>
+            <p>
+                In my spare time, I am learning Rust and low-level programming
+                ecosystem. I am also a big fan and user of Linux. I am
+                interested and involved in the FOSS ecosystem, and I like to
+                support interesting and useful projects. I also care about
+                network and computer privacy, which is very much in line with
+                the FOSS philosophy.
+            </p>
+            <p>
+                Of more down-to-earth things, I am interested in space, science
+                and technology. I also love electronic music and video games,
+                especially those that are challenging, have out-of-the-box ideas
+                and surprise with game design.
+            </p>
+        </section>
+
+        <section class="container">
+            <h1>Experience</h1>
+
+            <section class="experience">
+                <h4>
+                    .NET Developer at
+                    <a href="https://yarrl.pl" target="_blank">yarrl</a>
+                </h4>
+                <h5>May 2024 - Now</h5>
+                <span class="tag tag-area">Backend</span>
+                <span class="tag tag-area">Frontend</span>
+                <span class="tag tag-area">High availability</span>
+                <span class="tag tag-lang">C#</span>
+                <span class="tag tag-lang">TypeScript</span>
+                <span class="tag tag-lang">SQL</span>
+                <span class="tag tag-tech">.NET</span>
+                <span class="tag tag-tech">ASP.NET</span>
+                <span class="tag tag-tech">Entity Framework</span>
+                <span class="tag tag-tech">React</span>
+                <span class="tag tag-soft">SQL Server</span>
+                <span class="tag tag-soft">IBM MQ</span>
+                <span class="tag tag-soft">OpenTelemetry</span>
+                <span class="tag tag-soft">Grafana</span>
+
+                <p>Developing large low-code platform:</p>
+                <ul>
+                    <li>Writing custom language server for C# scripting</li>
+                    <li>Using EF Core to build advanced dynamic queries</li>
+                    <li>Developing frontend using React and TypeScript</li>
+                </ul>
+
+                <p>Creating integrations with external systems:</p>
+                <ul>
+                    <li>
+                        Writing high-availability and horizontally-scalable
+                        services
+                    </li>
+                    <li>Integrating with BIK using IBM MQ and REST</li>
+                    <li>Implementing logging and tracing for services</li>
+                    <li>Creating services for mass file processing</li>
+                    <li>Micro-optimizing frequent SQL queries</li>
+                    <li>Analyzing and fixing issues with large databases</li>
+                </ul>
+            </section>
+
+            <hr />
+
+            <section class="experience">
+                <h4>
+                    .NET Developer at
+                    <a href="https://psfinteco.com" target="_blank"
+                        >ProService Finteco</a
+                    >
+                </h4>
+                <h5>May 2022 - May 2024</h5>
+                <span class="tag tag-area">Backend</span>
+                <span class="tag tag-area">Frontend</span>
+                <span class="tag tag-area">MES</span>
+                <span class="tag tag-lang">C#</span>
+                <span class="tag tag-lang">TypeScript</span>
+                <span class="tag tag-tech">.NET</span>
+                <span class="tag tag-tech">ASP.NET</span>
+                <span class="tag tag-tech">Entity Framework</span>
+                <span class="tag tag-tech">Dapper</span>
+                <span class="tag tag-tech">React</span>
+                <span class="tag tag-tech">DDD</span>
+                <span class="tag tag-tech">CQRS</span>
+                <span class="tag tag-soft">SQL Server</span>
+                <span class="tag tag-soft">MS Exchange</span>
+                <span class="tag tag-soft">RabbitMQ</span>
+
+                <p>Designing and developing large no-code platform:</p>
+                <ul>
+                    <li>Designing platform architecture using DDD model</li>
+                    <li>Creating REST service using ASP.NET Core</li>
+                    <li>Using EF Core to build advanced dynamic queries</li>
+                    <li>Writing workflow activities using Elsa Workflows</li>
+                    <li>Working on secure auth service using OIDC protocol</li>
+                    <li>Developing frontend using React and TypeScript</li>
+                </ul>
+
+                <p>Creating integrations with external systems:</p>
+                <ul>
+                    <li>Integrating with MS Exchange using EWS API</li>
+                    <li>Building realtime service for manufacturing process</li>
+                    <li>Connecting with financial and government solutions</li>
+                </ul>
+            </section>
+
+            <hr />
+
+            <section class="experience">
+                <h4>
+                    Junior .NET Developer at
+                    <a href="https://psfinteco.com" target="_blank"
+                        >ProService Finteco</a
+                    >
+                </h4>
+                <h5>July 2021 - April 2022</h5>
+                <span class="tag tag-area">Backend</span>
+                <span class="tag tag-area">Frontend</span>
+                <span class="tag tag-lang">C#</span>
+                <span class="tag tag-lang">TypeScript</span>
+                <span class="tag tag-lang">SQL</span>
+                <span class="tag tag-tech">.NET</span>
+                <span class="tag tag-tech">ASP.NET</span>
+                <span class="tag tag-tech">Angular</span>
+                <span class="tag tag-tech">WPF</span>
+                <span class="tag tag-soft">SQL Server</span>
+                <span class="tag tag-soft">Azure DevOps</span>
+
+                <p>Maintaining large no-code system:</p>
+                <ul>
+                    <li>Developing ASP.NET REST services</li>
+                    <li>Writing SQL Server queries</li>
+                    <li>Maintaining frontend SPA using Angular</li>
+                    <li>Maintaining desktop app using WPF and ReactiveUI</li>
+                </ul>
+
+                <p>Writing internal NuGet packages for other applications:</p>
+                <ul>
+                    <li>Creating Azure CI/CD Pipelines</li>
+                    <li>Unit testing C# code using xUnit and NSubstitute</li>
+                    <li>Writing technical and business documentation</li>
+                </ul>
+            </section>
+
+            <hr />
+
+            <section class="experience">
+                <h4>
+                    Game Programmer and Level Designer at
+                    <a
+                        href="https://www.facebook.com/dziejekhorinis"
+                        target="_blank"
+                        >Dzieje Khorinis</a
+                    >
+                </h4>
+                <h5>April 2018 - September 2018</h5>
+                <span class="tag tag-area">Game Modding</span>
+
+                <p>Developing a large modification for game Gothic 2:</p>
+                <ul>
+                    <li>Creating NPCs, dialogues, quests, and routines</li>
+                    <li>Adding items and objects to the game world</li>
+                    <li>
+                        Memory hacking game process to extend engine
+                        capabilities
+                    </li>
+                    <li>Using Git as a version control system for a project</li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="container">
+            <h1>Certificates</h1>
+
+            <section class="certificate">
+                <h4>Complete C# Unity Game Developer 2D</h4>
+                <h5>GameDev.tv - 2021</h5>
+                <span class="tag tag-area">Programming</span>
+                <span class="tag tag-area">Game Development</span>
+                <span class="tag tag-lang">C#</span>
+                <span class="tag tag-soft">Unity</span>
+            </section>
+
+            <section class="certificate">
+                <h4>
+                    EE.09. Website and database programming, creation and
+                    administration
+                </h4>
+                <h5>Centralna Komisja Egzaminacyjna - 2021</h5>
+                <span class="tag tag-area">Networking</span>
+                <span class="tag tag-area">Programming</span>
+                <span class="tag tag-lang">SQL</span>
+                <span class="tag tag-lang">HTML</span>
+                <span class="tag tag-lang">JS</span>
+                <span class="tag tag-soft">MS Access</span>
+            </section>
+
+            <section class="certificate">
+                <h4>
+                    EE.08. Assembly and operation of computer systems,
+                    peripheral devices and networks
+                </h4>
+                <h5>Centralna Komisja Egzaminacyjna - 2020</h5>
+                <span class="tag tag-area">Hardware</span>
+                <span class="tag tag-area">Networking</span>
+            </section>
+
+            <section class="certificate">
+                <h4>Routing and Switching Essentials (CCNA)</h4>
+                <h5>Cisco Networking Academy - 2020</h5>
+                <span class="tag tag-area">Networking</span>
+            </section>
+
+            <section class="certificate">
+                <h4>Programming in Java</h4>
+                <h5>Krajowe Centrum Akredytacji - 2018</h5>
+                <span class="tag tag-area">Programming</span>
+                <span class="tag tag-lang">Java</span>
+            </section>
+
+            <section class="certificate">
+                <h4>Programming Essentials in C++ (CPA)</h4>
+                <h5>Cisco Networking Academy - 2018</h5>
+                <span class="tag tag-area">Programming</span>
+                <span class="tag tag-lang">C++</span>
+            </section>
+
+            <section class="certificate">
+                <h4>Programming Essentials in Python (PCAP)</h4>
+                <h5>Cisco Networking Academy - 2018</h5>
+                <span class="tag tag-area">Programming</span>
+                <span class="tag tag-lang">Python</span>
+            </section>
+
+            <section class="certificate">
+                <h4>Introduction to Cybersecurity</h4>
+                <h5>Cisco Networking Academy - 2018</h5>
+                <span class="tag tag-area">Networking</span>
+                <span class="tag tag-area">Cybersecurity</span>
+            </section>
+
+            <section class="certificate">
+                <h4>IT Essentials</h4>
+                <h5>Cisco Networking Academy - 2018</h5>
+                <span class="tag tag-area">Networking</span>
+            </section>
+        </section>
+
+        <footer>© 2026 Karol Wojtasiuk - All Rights Reserved.</footer>
+    </body>
 </html>
